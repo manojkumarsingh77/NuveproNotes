@@ -7,4 +7,6 @@ telecomDF.write
 spark.sql("SELECT * FROM telecom_data_table").show()
 
 // spark.sql("SELECT current_database()").show()
+// spark.sql("SHOW TABLES IN default").show()
+
 
