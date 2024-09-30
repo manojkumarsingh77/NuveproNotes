@@ -1,0 +1,11 @@
+USE default;
+SELECT * FROM telecom_data_table LIMIT 10;
+ 
+-- Sample business queries
+SELECT plan, COUNT(*) as user_count
+FROM telecom_data_table
+GROUP BY plan;
+ 
+SELECT customer_id, usage
+FROM telecom_data_table
+WHERE usage > 100;
