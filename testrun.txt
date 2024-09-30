@@ -122,4 +122,10 @@ Caused by: java.io.IOException: Mkdirs failed to create file:/user/hive/warehous
   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
   ... 1 more
 
+val spark = SparkSession.builder()
+    .appName("HDFS to Spark")
+    .config("spark.sql.warehouse.dir", "/user/hive/warehouse")  // Ensure this is the correct location
+    .enableHiveSupport()
+    .getOrCreate()
+
 
