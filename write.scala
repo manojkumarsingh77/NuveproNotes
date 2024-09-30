@@ -5,3 +5,6 @@ telecomDF.write
 
 // Confirm the data has been saved
 spark.sql("SELECT * FROM telecom_data_table").show()
+
+// spark.sql("SELECT current_database()").show()
+
